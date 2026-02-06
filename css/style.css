@@ -1,1 +1,128 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    /* Replace the URL below with your image link */
+    background-image: url('../Images/image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adds a dark tint so the form pops against the image */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+form {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(15px); /* This creates the frosted glass look */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 50px 35px;
+    position: relative;
+    z-index: 2;
+}
+
+form * {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0 15px;
+    margin-top: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4facfe; /* A nice blue accent on hover */
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.social div {
+    flex: 1;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
